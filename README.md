@@ -1,2 +1,16 @@
+/* 
 # Yongjian_Wang-Code-Gallery
-Here's some simple C++ Program code for beginners to view.
+Here's some simple C++ Program code for beginners to view. 
+*/
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	double ctemp,ftemp;  // 申请内存空间
+	cin >> ctemp;  // 从键盘中输入摄氏度温度
+	ftemp =ctemp * 1.8 + 32;  // 温度换算
+	cout << ftemp;  //在显示器上输出华氏温度
+	return 0;  //程序结束返回操作系统
+}
