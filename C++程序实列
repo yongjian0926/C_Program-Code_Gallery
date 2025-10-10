@@ -1,3 +1,7 @@
+/*
+一个C++程序实列，
+将摄氏温度换算成华氏温度
+*/
 #include <iostream>
 using namespace std;
 
