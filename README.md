@@ -25,8 +25,8 @@ G'day mate. I’m passionate about technology, learning new things, and I love t
 
 ## ✨ Fun Facts
 
-- 🎵 (My favorite hobby is listing music while I'm running)
-- 🌍 (I'm from China.)
+- 🎵 (Listing music while I'm running)
+- 📸 (Photography）
 
 ---
 
