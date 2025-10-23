@@ -1,0 +1,14 @@
+#include<stdio.h>
+
+void main()
+{
+	double l, w,c,s;
+	printf("请输入矩形的长：");
+	scanf("%lf",&l);
+	printf("请输入矩形的宽：");
+	scanf("%lf",&w);
+	c = 2 * (l + w);
+	s = l * w;
+	printf("矩形的周长：%lf",c);
+	printf("矩形的面积：%lf",s);
+}
