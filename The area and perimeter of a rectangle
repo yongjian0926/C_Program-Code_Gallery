@@ -9,6 +9,6 @@ void main()
 	scanf("%lf",&w);
 	c = 2 * (l + w);
 	s = l * w;
-	printf("矩形的周长：%lf",c);
-	printf("矩形的面积：%lf",s);
+	printf("矩形的周长：%.2lf",c);
+	printf("矩形的面积：%.2lf",s);
 }
