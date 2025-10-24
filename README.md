@@ -4,8 +4,9 @@ G'day mate. I’m passionate about technology, learning new things, and I love t
 
 ## 🚀 About Me
 
-- 💻 **hoby:** (Learning and sharing computer skills)
+- 👤 **Name:** (王涌鉴-Yongjian Wang)
 - 👤 **Sex:** (Male)
+- 💻 **hoby:** (Learning and sharing computer skills)
 - 🇨🇳 **Countey:** (PRC)
   
 ---
