@@ -1,4 +1,6 @@
-G'day mate. I’m passionate about technology, learning new things, and I love to make things different.
+## C_Program-Code_Gallery
+
+- **About this gallery:** (Some C++ programs code in this gallery. And all the code are public.) 
 
 ---
 
