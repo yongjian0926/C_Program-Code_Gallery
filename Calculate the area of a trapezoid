@@ -1,0 +1,14 @@
+#include<stdio.h>
+
+void main()
+{
+	double t1,t2,h,s;
+	printf("请输入梯形的上底：");
+	scanf("%lf",&t1);
+	printf("请输入梯形的下底：");
+	scanf("%lf",&t2);
+	printf("请输入梯形的高：");  
+	scanf("%lf",&h);
+	s=(t1+t2)*h/2;
+	printf("梯形的面积是：%.2lf\n",s);
+}
