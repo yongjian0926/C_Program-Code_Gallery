@@ -2,7 +2,7 @@
 
 void main()
 {
-	double l, w,c,s;
+	double l,w,c,s;
 	printf("请输入矩形的长：");
 	scanf("%lf",&l);
 	printf("请输入矩形的宽：");
