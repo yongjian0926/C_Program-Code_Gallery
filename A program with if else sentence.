@@ -1,0 +1,17 @@
+#include<stdio.h>
+
+void main()
+{
+	double num;
+	printf("请输入一个数：");
+	scanf("%lf",&num);
+	if(num<0)
+	{
+		num=-num;
+		printf("绝对值是：%.2lf\n",num);
+	}
+	else
+	{
+		printf("绝对值是：%.2lf\n\n",num);
+	}
+}
