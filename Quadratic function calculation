@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<math.h>
+
+int main()
+{
+    double a, b, c, delta, X1, X2;
+    printf("请输入一元二次方程a，b，c的值：");
+    scanf("%lf%lf%lf", &a, &b, &c);
+    if(a==0)
+	{
+		printf("该方程不是一元二次方程");
+	}
+    else
+	{
+		delta=b*b-4*a*c;
+		if(delta>0)
+		{
+			X1 = (-b + sqrt(delta)) / (2 * a);
+			X2 = (-b - sqrt(delta)) / (2 * a);
+		    printf("方程有两个实数根，分别是%lf和%lf\n",X1,X2);
+		}
+		else if(delta==0)
+		{
+			X1 = (-b + sqrt(delta)) / (2 * a);
+			printf("方程有一个实数根,分别是%lf\n",X1);
+		}
+		else
+			printf("该代码无解\n\n");
+	}
+}
