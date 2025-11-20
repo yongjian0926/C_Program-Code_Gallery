@@ -22,7 +22,7 @@ int main()
 		else if(delta==0)
 		{
 			X1 = (-b + sqrt(delta)) / (2 * a);
-			printf("方程有一个实数根,分别是%lf\n",X1);
+			printf("方程有一个实数根是%lf\n",X1);
 		}
 		else
 			printf("该代码无解\n\n");
