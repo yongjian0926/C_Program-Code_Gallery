@@ -1,0 +1,24 @@
+#include<stdio.h>
+
+void main()
+{
+	double x,y,z;
+	printf("请输入X和Y的值：");
+	scanf("%lf%lf",&x,&y);
+	if(x>0 && y>0)
+	{
+		printf("在第一象限\n\n");
+	}
+	else if(x<0 && y>0)
+	{
+		printf("在第二象限\n\n");
+	}
+	else if(x<0 && y<0)
+	{
+		printf("在第三象限\n\n");
+	}
+	else if(x>0 && y<0)
+	{
+		printf("在第四象限\n\n");
+	}
+}
