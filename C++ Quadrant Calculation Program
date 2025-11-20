@@ -21,4 +21,24 @@ void main()
 	{
 		printf("在第四象限\n\n");
 	}
+	else if(x>0 && y==0)
+	{
+		printf("在X正半轴\n\n");
+	}
+	else if(x<0 && y==0)
+	{
+		printf("在X负数半轴\n\n");
+	}
+	else if(x==0 && y>0)
+	{
+		printf("在Y正半轴\n\n");
+	}
+	else if(x==0 && y<0)
+	{
+		printf("在Y负半轴\n\n");
+	}
+	else if(x==0 && y==0)
+	{
+		printf("在原点\n\n");
+	}
 }
