@@ -1,19 +1,14 @@
 #include<stdio.h>
-#include<math.h>
 
 void main()
 {
-	float i,j;
-	float x;
-	x=1;
-	i=1;
-	j=-1;
-	while(i<=99)
+	int num,x;
+	x=2;
+	num=2;
+	while(x<=98)
 	{
-		x=x+j/(i+1);
-		i=i+1;
-		j=-1*j;
-		
+	x=x+2;
+	num=num+x;
 	}
-	printf("%lf",x);
+	printf("%d\n\n",num);
 }
