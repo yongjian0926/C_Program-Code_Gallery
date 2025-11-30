@@ -1,0 +1,16 @@
+#include<stdio.h>
+
+void main()
+{
+	double num,x,z;
+	z=1;
+	x=1;
+	num=0;
+	while(x<=100)
+	{
+		num=num+z/x;
+		x=x+1;
+		z=-z;
+	}
+	printf("%lf\n\n",num);
+}
