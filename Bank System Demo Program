@@ -1,0 +1,60 @@
+#include<stdio.h>
+
+int main()
+{
+	int choise;
+	double balance = 1000.0;
+	while(1)
+	{
+        printf("\n---------- 欢迎使用我的银行系统 ----------\n");
+        printf("1. 查询余额\n");
+        printf("2. 存款\n");
+        printf("3. 取款\n");
+        printf("4. 退卡\n");
+        printf("请选择: ");
+        scanf("%d", &choise);
+		switch(choise)
+		{
+		case 1: printf("您当前的余额是:%.2lf\n\n",balance);break;
+		case 2: 
+			{
+			double cash;
+			printf("请输入存款金额：");
+			scanf("%lf",&cash);
+			balance=balance+cash;
+			printf("存款完成！\n\n");
+			break;
+			}
+		case 3: 
+			{
+			double cash;
+			printf("请输入取款金额：");
+			scanf("%lf",&cash);
+			if(cash<=balance)
+			{
+				balance=balance-cash;
+				printf("取款成功！\n\n");
+			}
+			else
+				printf("取款失败！取款金额超出账户余额");
+			break;
+			}
+		case 4: 
+			{
+			printf("谢谢使用我的银行系统\n\n");
+			return 0;
+			}
+		default:
+			{
+			printf("无效选项，请重新输入！\n\n");
+			break;
+			}
+		}
+		if(choise>=1 && choise <=3)
+		{
+			printf("按回车键以继续……");
+			getchar();
+			getchar();
+		}
+	}
+}
