@@ -2,7 +2,7 @@
 
 int main()
 {
-	int choise;
+	int choice;
 	double balance = 1000.0;
 	while(1)
 	{
@@ -12,8 +12,8 @@ int main()
         printf("3. 取款\n");
         printf("4. 退卡\n");
         printf("请选择: ");
-        scanf("%d", &choise);
-		switch(choise)
+        scanf("%d", &choice);
+		switch(choice)
 		{
 		case 1: printf("您当前的余额是:%.2lf\n\n",balance);break;
 		case 2: 
@@ -60,7 +60,7 @@ int main()
 			break;
 			}
 		}
-		if(choise>=1 && choise <=3)
+		if(choice>=1 && choice <=3)
 		{
 			printf("按回车键以继续……");
 			getchar();
