@@ -36,7 +36,7 @@ int main()
 				printf("取款成功！\n\n");
 			}
 			else
-				printf("取款失败！取款金额超出账户余额");
+				printf("取款失败！取款金额超出账户余额\n\n");
 			break;
 			}
 		case 4: 
