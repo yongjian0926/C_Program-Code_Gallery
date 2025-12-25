@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+void main()
+{
+	int date[3],i;
+	int year,month,day;
+	printf("请输入日期（年/月/日）:\n");
+	for(i=0;i<3;i++)
+	{
+		printf("请输入第%d个数：",i+1);
+		scanf("%d",&date[i]);
+	}
+	year=date[0];
+	month=date[1];
+	day=date[2];
+	int dateInMonth[]={31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+	int totalday=0;
+	if((year % 4 == 0 && year % 100 != 0) || year % 400 == 0)
+	{
+		dateInMonth[1]=29;
+	}
+	for(i=0;i<month-1;i++)
+	{
+		totalday+=dateInMonth[i];
+	}
+	totalday+= day;
+	printf("这一天是这%d年的第%d天\n\n",year,totalday);
+}
