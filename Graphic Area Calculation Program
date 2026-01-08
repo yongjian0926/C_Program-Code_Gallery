@@ -1,0 +1,84 @@
+#include <stdio.h>
+
+double rectangleArea_1(double long1) {
+    return long1 * long1;
+}
+double rectangleArea_2(double length1, double length2, double height) {
+    return (length1 + length2) * height / 2.0;
+}
+double rectangleArea_3(double r){
+	return(r*r*3.14);
+}
+double rectangleArea_4(double length, double width) {
+    return (length * width);
+}
+int main()
+{
+	int choice;
+	while(1)
+	{
+        printf("--------------------图形面积计算--------------------\n");
+	printf("1.计算正方形面积\n");
+	printf("2.计算梯形面积\n");
+	printf("3.计算圆形面积\n");
+	printf("4.计算矩形面积\n");
+	printf("5.结束程序\n");
+	printf("请输入：");
+        scanf("%d", &choice);
+		switch(choice)
+		{
+		case 1:
+			{
+				double side,square_area;
+				printf("请输入正方形的边长：");
+				scanf("%lf", &side);
+				square_area = rectangleArea_1(side);
+				printf("正方形的面积是： %lf\n", square_area);
+			}	
+			break;
+		case 2: 
+			{
+            double top, bottom, height, trapezoid_area;
+            printf("请输入梯形的上底 下底 高：");
+            scanf("%lf %lf %lf", &top, &bottom, &height);
+            trapezoid_area = rectangleArea_2(top, bottom, height);
+            printf("梯形的面积是： %lf\n\n", trapezoid_area);
+			}
+			break;
+		case 3: 
+			{
+				double r,round_area;
+				printf("请输入圆的半径：");
+				scanf("%lf", &r);
+				round_area = rectangleArea_3(r);
+				printf("圆形的面积是： %lf\n",round_area );
+			}
+			break;
+		case 4:
+			{
+				double length, width, rect_area;
+				printf("请分别输入矩形的两个边长：");
+				scanf("%lf %lf", &length, &width);
+				rect_area = rectangleArea_4(length, width);
+				printf("矩形面积是： %lf\n", rect_area);
+			}
+			break;
+		case 5: 
+			{
+			printf("谢谢使用\n\n");
+			return 0;
+			}
+		default:
+			{
+			printf("无效选项，请重新输入！\n\n");
+			break;
+			}
+		}
+		if(choice>=1 && choice<=4)
+		{
+			printf("按回车键以继续……");
+			getchar();
+			getchar();
+		}
+	}
+}
