@@ -33,7 +33,7 @@ int main()
 				printf("请输入正方形的边长：");
 				scanf("%lf", &side);
 				square_area = rectangleArea_1(side);
-				printf("正方形的面积是： %lf\n", square_area);
+				printf("正方形的面积是： %.2lf\n", square_area);
 			}	
 			break;
 		case 2: 
@@ -42,7 +42,7 @@ int main()
             printf("请输入梯形的上底 下底 高：");
             scanf("%lf %lf %lf", &top, &bottom, &height);
             trapezoid_area = rectangleArea_2(top, bottom, height);
-            printf("梯形的面积是： %lf\n\n", trapezoid_area);
+            printf("梯形的面积是： %.2lf\n\n", trapezoid_area);
 			}
 			break;
 		case 3: 
@@ -51,7 +51,7 @@ int main()
 				printf("请输入圆的半径：");
 				scanf("%lf", &r);
 				round_area = rectangleArea_3(r);
-				printf("圆形的面积是： %lf\n",round_area );
+				printf("圆形的面积是： %.2lf\n",round_area );
 			}
 			break;
 		case 4:
@@ -60,7 +60,7 @@ int main()
 				printf("请分别输入矩形的两个边长：");
 				scanf("%lf %lf", &length, &width);
 				rect_area = rectangleArea_4(length, width);
-				printf("矩形面积是： %lf\n", rect_area);
+				printf("矩形面积是： %.2lf\n", rect_area);
 			}
 			break;
 		case 5: 
