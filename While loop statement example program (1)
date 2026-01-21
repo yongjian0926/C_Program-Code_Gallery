@@ -7,8 +7,8 @@ void main()
 	num=2;
 	while(x<=98)
 	{
-	x=x+2;
-	num=num+x;
+		x=x+2;
+		num=num+x;
 	}
 	printf("%d\n\n",num);
 }
