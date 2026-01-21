@@ -15,50 +15,51 @@ int main()
         scanf("%d", &choice);
 		switch(choice)
 		{
-		case 1: printf("您当前的余额是:%.2lf\n\n",balance);break;
-		case 2: 
-			{
-			double cash;
-			printf("请输入存款金额：");
-			scanf("%lf",&cash);
-			if(cash<=0)
-			{
-			printf("存款失败！存款金额不得为负且不得为零\n\n");
-			break;
-			}
-			balance=balance+cash;
-			printf("存款完成！\n\n");
-			break;
-			}
-		case 3: 
-			{
-			double cash;
-			printf("请输入取款金额：");
-			scanf("%lf",&cash);
-			if(cash<=0)
-			{
-			printf("取款失败！取款金额不得为负且不得为零\n\n");
-			break;
-			}
-			if(cash<=balance)
-			{
-				balance=balance-cash;
-				printf("取款成功！\n\n");
-			}
-			else
-				printf("取款失败！取款金额超出账户余额\n\n");
-			break;
-			}
-		case 4: 
-			{
-			printf("谢谢使用我的银行系统\n\n");
-			return 0;
-			}
-		default:
-			{
-			printf("无效选项，请重新输入！\n\n");
-			break;
-			}
+			case 1: printf("您当前的余额是:%.2lf\n\n",balance);break;
+			case 2: 
+				{
+					double cash;
+					printf("请输入存款金额：");
+					scanf("%lf",&cash);
+					if(cash<=0)
+					{
+						printf("存款失败！存款金额不得为负且不得为零\n\n");
+						break;
+					}
+					balance=balance+cash;
+					printf("存款完成！\n\n");
+					break;
+				}
+			case 3: 
+				{
+					double cash;
+					printf("请输入取款金额：");
+					scanf("%lf",&cash);
+					if(cash<=0)
+					{
+						printf("取款失败！取款金额不得为负且不得为零\n\n");
+						break;
+					}
+					if(cash<=balance)
+					{
+						balance=balance-cash;
+						printf("取款成功！\n\n");
+					}
+					else
+					{
+						printf("取款失败！取款金额超出账户余额\n\n");
+						break;
+					}
+			case 4: 
+				{
+					printf("谢谢使用我的银行系统\n\n");
+					return 0;
+				}
+			default:
+				{
+					printf("无效选项，请重新输入！\n\n");
+					break;
+				}
 		}
 		if(choice>=1 && choice <=3)
 		{
