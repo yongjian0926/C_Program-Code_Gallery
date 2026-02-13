@@ -1,6 +1,6 @@
 ## C_Program-Code_Gallery
 
-- **About this gallery:** (Some C++ programs code in this gallery. And all the code are public.) 
+- **About this gallery:** (Some C programs code in this gallery. And all the code are public.) 
 
 ---
 
